@@ -102,3 +102,7 @@ Build with `make` (requires gcc):
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+## Tools
+
+- Gitg — the goat

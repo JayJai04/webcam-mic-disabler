@@ -105,4 +105,4 @@ MIT — see [LICENSE](LICENSE).
 
 ## Tools
 
-- Gitg — the goat
+- Gitg for git, geany for editor

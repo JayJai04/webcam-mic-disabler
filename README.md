@@ -91,6 +91,14 @@ Build with `make` (requires gcc):
 - Google Chrome 151 with PipeWire (`pipewire-pulse`), Google Meet
 - Hardware: generic "USB 2.0 Camera", ID `328f:0073`, serial `SN0001`
 
+## Notes
+
+- The camera's audio endpoint is defective at the firmware level, not the driver
+  level — no kernel update will fix it. Disabling the audio interface is the only
+  reliable workaround.
+- Quirk `0x2` is forced for `uvcvideo` via `/etc/modprobe.d/uvcvideo-quirks.conf`
+  to work around the camera's sloppy UVC control responses.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).

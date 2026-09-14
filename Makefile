@@ -12,4 +12,11 @@ audiocap: audiocap.c
 clean:
 	rm -f v4l2test audiocap
 
-.PHONY: all clean
+.PHONY: all clean install
+
+install: all
+	install -d $(DESTDIR)/usr/local/bin
+	install -m 755 v4l2test audiocap $(DESTDIR)/usr/local/bin/
+
+uninstall:
+	rm -f $(DESTDIR)/usr/local/bin/v4l2test $(DESTDIR)/usr/local/bin/audiocap
